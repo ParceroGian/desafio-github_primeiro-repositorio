@@ -1,0 +1,31 @@
+### comandos Do GIT
+
+
+
+- cd
+- dir
+- mkdir
+- del / rmdir
+- de .. 
+- cls
+- tab
+- rmdir  /s /q
+- ctrl + L
+- mv "NomeArquivo" ./ pasta de desitino
+- echo <
+- git add *
+- git NomeArquivo
+- git *
+- git.
+- git config --global user.email
+- git config --global user.name
+- git config --global --unset user.email
+- git config --global --unset iser.name
+- git commit -m
+- git commit -am
+- git init
+- git remote add origin (link github)
+- git remot -v
+- git status
+- git push origin master
+- git pull origin master
