@@ -6,7 +6,7 @@
 - dir
 - mkdir
 - del / rmdir
-- de .. 
+- dc .. 
 - cls
 - tab
 - rmdir  /s /q

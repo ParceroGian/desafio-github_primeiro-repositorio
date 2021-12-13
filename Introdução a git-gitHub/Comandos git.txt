@@ -1,0 +1,132 @@
+Defina seu e-mail e nome nas configurações
+
+
+Para que comandos funcionem em um escopo global adicionar a opção --global.
+Definindo e-mail
+
+
+git config user.email "seu-email"
+
+
+Definindo nome
+
+
+git config user.name "seu_nome"
+
+
+Remover arquivois de um repositório Git
+
+
+git rm <arquivos>
+
+
+Para remover esses arquivos apenas do GIt sem removê-los localmente:
+
+
+git rm --cached <arquivos>
+
+
+Para remover dirórios, basta adicionara opção -r
+
+
+Clonando um repositório
+
+
+Você acabou de criar um repositório e quer cloaná-lo para sua máquina.
+
+
+git clone <link_do_repositóro>
+
+
+Adicionando um repositório em um projeto que já existe
+Você já está trabalhando em um projeto, mas criou o repositório depois.
+
+
+git init
+git add
+git commit -m "primeiro commit"
+git remote add origin <link_do_repositório>
+
+
+
+Se o repositório que você está adicionando estiver vazio, você pode apenas executar:
+git push origin master
+
+
+e então execute o comando push
+
+Obter alterações feitas em um repositório 
+git pull origin master
+
+Desfazer algo que você adicionou 
+Se você executou:
+
+
+git add <arquivo> ou git add.
+
+
+E você quer desfazer porque acabou adicionando o arquivo errado, então execute:
+
+
+git reset <arquivo>
+
+
+Ou se você quer desfazer todos os arquivos adicionados, execute apenas:
+
+
+git reset 
+
+Desfazer último commit Você fez um commit, então percebeu que algo estava errado com ele. Para desfazê-lo, basta executar:
+
+
+git reset ~HEAD
+
+
+Você também pode executar:
+
+
+git revert HEAD
+
+
+A diferença é que git revert adicionará um novo commit que reverterá o último commit (é melhor ultilizar o reset, porque é mais especifico, o que está errado pode não ser o último commit).
+
+
+Editando o último commit
+
+
+Para editar o último commit ou a última mensagem de commit, execute:
+
+
+git commit --amend -m "nova mensagem"
+
+Fez alterações, mas quer voltar a versão anterior
+
+git checkout.
+
+
+Para remover alterações locais de arquivos especificos em vez de todas as alterações, você pode executar:
+
+
+git checkout <arquivo> 
+
+Criar uma nova branch
+
+git branch <nova_branch>
+
+Mudar de uma branch para outra 
+
+git checkout <nome_da_branch>
+
+Crie uma nova branch e mude instantaneamente para ela 
+
+
+git branch -d <>nome_da_branch>
+
+
+Unir branchs
+
+
+esteja na branch que você quer unir com a outra e excue:
+
+
+git merge <nome_da_branch>
